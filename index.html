@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href= "index.css"/>
-    <title>CN - To-do List</title>
+    <link rel="shortcut icon" href="icone.png" />
+
+    <title>To-do List</title>
 </head>
 <body>
-    <h1>CN - To do List</h1>
+    <header class="cabecalho">
+        <h1 > My To-do List </h1>
+        <p> "Com organização e tempo, acha-se o segredo de fazer tudo bem feito." (Pitágoras)</p>
+    
     <div>
-        <input id="atividade" />
-        <button onclick="inserirAtividade()">Adicionar</button>
+        <fieldset class= "novaAtividade">
+        <label for ="atividade"> Nova atividade </label>
+        <input id="atividade" type="text" name="atividade" placeholder="digite aqui"/>
+        <button onclick="inserirAtividade()"> Adicionar </button>
+        </fieldset>
     </div>
 
     <div id="toDoList"></div>
+
 </body>
 <script src="index.js"></script>
 </html>
